@@ -14,7 +14,7 @@ cd anorgeous
 ### install dependency
 
 ```
-npm start
+npm install
 ```
 
 ### run the server
