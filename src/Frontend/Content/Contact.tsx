@@ -44,8 +44,8 @@ const Contact = () => {
                                     <input type="email" className="form-control" id="email" placeholder="name@example.com" required/>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="discussion" className="form-label">Example textarea</label>
-                                    <textarea className="form-control" id="discussion" required></textarea>
+                                    <label htmlFor="discussion" className="form-label">Discussion</label>
+                                    <textarea className="form-control" id="discussion" placeholder="Enter your queries here ..." required></textarea>
                                     </div>
                             </div>
                             <div className="d-flex justify-content-end">
