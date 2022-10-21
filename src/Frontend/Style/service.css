@@ -1,0 +1,28 @@
+.service-icon {
+    font-size: 5rem;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    /* width: 25%; */
+    margin: 2rem;
+    background-color: var(--color-bg);
+}
+
+.card:hover {
+    border: 1px solid var(--btn-bg);
+    transform: translateY(5px);
+}
+
+.card-title {
+    color: var(--btn-bg);
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
