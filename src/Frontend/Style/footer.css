@@ -1,3 +1,12 @@
 footer {
     color: #555;
 }
+
+.icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: var(--color-primary);
+}
