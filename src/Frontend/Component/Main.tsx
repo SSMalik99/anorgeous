@@ -7,6 +7,7 @@ import Team from "../Content/Team";
 import Work from "../Content/Work";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import "../Style/main.css"
 
 const Main = () => {
     return (
@@ -14,6 +15,7 @@ const Main = () => {
         <Navbar/>
         
         {/* Client side navigation */}
+        <div className="main">
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/home' element={<Home />} />
@@ -22,6 +24,8 @@ const Main = () => {
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
         </Routes>
+        </div>
+
         <Footer />
         </BrowserRouter>
     )
