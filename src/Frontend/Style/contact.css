@@ -15,12 +15,22 @@ textarea {
     min-height: 100px !important;
 }
 
+button {
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: var(--btn-bg);
+}
+
+.done {
+    color: var(--btn-bg);
+}
+
 .header {
     font-size: 4rem;
 }
 
 p {
-    margin-top: 2rem;
+    margin-top: 3rem !important;
     width: 30rem;
     max-width: 100%;
     font-size: 1.125rem;

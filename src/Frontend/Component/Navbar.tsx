@@ -15,27 +15,27 @@ const Navbar = () => {
             </div>
             <div>
             <ul className="navbar-nav mr-auto">
-                <li className="nav-item">
+                <li className="nav-item mx-md-3">
                 <NavLink className="nav-link" to={"/home"}>
                     Home
                 </NavLink>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item mx-md-3">
                 <NavLink className={"nav-link"} to={"/team"}>
                     Team
                 </NavLink>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item mx-md-3">
                 <NavLink className={"nav-link"} to={"/work"}>
                     Work
                 </NavLink>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item mx-md-3">
                 <NavLink className={"nav-link"} to={"/services"}>
                     Services
                 </NavLink>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item mx-md-3">
                 <NavLink className={"nav-link"} to={"/contact"}>
                     Contact Us
                 </NavLink>
