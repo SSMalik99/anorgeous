@@ -1,3 +1,5 @@
+@import "../../index.css";
+
 input,
 textarea {
     width: 100%;
@@ -7,4 +9,16 @@ textarea {
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white);
+}
+
+.header {
+    font-size: 4rem;
+}
+
+p {
+    margin-top: 2rem;
+    width: 30rem;
+    max-width: 100%;
+    font-size: 1.125rem;
+    color: #555;
 }
