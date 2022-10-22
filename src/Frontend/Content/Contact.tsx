@@ -23,9 +23,9 @@ const Contact = () => {
         e.target.reset();
     };
     return (
-        <section>
+        <section className="contact">
             <div className="container">
-            {/* <h2>Contact Us</h2> */}
+            <h2 className="d-lg-none d-block">Contact Us</h2>
                 <form ref={form} onSubmit={sendEmail}>
                     <div className="row">
                         <div className="col-lg-6 d-lg-block d-none">
