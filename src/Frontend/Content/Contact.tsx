@@ -16,7 +16,7 @@ const Contact = () => {
             },
             (error) => {
                 console.log(error.text);
-                alert('Email Sent Sucessfully!');
+                alert('Error while sending Emai!');
             }
         );
 
