@@ -1,12 +1,14 @@
 import React from "react";
 import "../Style/service.css"
 
+import backImage from "../../assets/main_bakc.jpeg"
+
 const Services = () => {
   return (
-    <section>
+    <section className="frontImageContainer">
       <div className="container">
         <h1 className="text-center">Our Services</h1>
-        <div className="mt-4 services d-flex flex-md-row flex-column">
+        <div className="services d-flex flex-md-row flex-column">
           <div className="card">
             <div className="card-body text-center">
               <i className="service-icon uil uil-programming-language"></i>

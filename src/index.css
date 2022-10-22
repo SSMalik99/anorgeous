@@ -51,7 +51,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url(./assets/bg-image.jpg) */
+  /* background-image: url(./assets/main_bakc.jpeg) */
 }
 
 
@@ -75,7 +75,7 @@ h1 {
 }
 
 section {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 section>h2,
@@ -137,8 +137,19 @@ img {
   }
 
   section {
-      margin-top: 3rem;
+      /* margin-top: 3rem; */
   }
+}
+
+.frontImageContainer {
+  background-image: url(./assets/main_bakc.jpeg);
+    
+  background-position: center;
+  background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+  
 }
 
 

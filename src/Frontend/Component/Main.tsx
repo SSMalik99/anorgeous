@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, ReactPropTypes, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "../Content/Contact";
 import Home from "../Content/Home";
@@ -9,13 +9,19 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "../Style/main.css"
 
+
+
 const Main = () => {
+    
+
     return (
         <BrowserRouter>
         <Navbar/>
         
+        
         {/* Client side navigation */}
-        <div className="main">
+        <div className={"main"} >
+            
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/home' element={<Home />} />

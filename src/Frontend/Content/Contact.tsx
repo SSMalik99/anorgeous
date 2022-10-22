@@ -23,7 +23,7 @@ const Contact = () => {
         e.target.reset();
     };
     return (
-        <section className="contact">
+        <section className="contact frontImageContainer">
             <div className="container">
             <h2 className="d-lg-none d-block">Contact Us</h2>
                 <form ref={form} onSubmit={sendEmail}>

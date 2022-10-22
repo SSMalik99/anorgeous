@@ -12,7 +12,7 @@ const Footer = () => {
       <div>
         <div className="d-flex align-items-center">
             <a 
-                href="#" className="text-decoration-none mr-3 text-black h">
+                href="#" className="text-decoration-none me-3 text-black h">
                     {"Term & Conditions"} 
             </a> 
             <span>|</span>
