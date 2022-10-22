@@ -7,7 +7,7 @@ const Footer = () => {
      
       className="px-4 footerFinalAlignment d-lg-flex d-xl-flex d-sm-flex d-xs-inline justify-content-between bottom-fixed align-items-center">
       <div>
-        Copyright©{new Date().getFullYear()} Annorgeous
+        Copyright©{new Date().getFullYear()} Anorgeous
       </div>
       <div>
         <div className="d-flex align-items-center">

@@ -1,8 +1,11 @@
 import React from "react";
 import '../Style/home.css';
 import landing from '../../assets/landing.jpeg';
+import { useNavigate } from "react-router-dom";
 // import bg from '../../assets/bg-image.jpg'
 const Home = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="container-fluid cont">
             <div className="row">
@@ -15,7 +18,9 @@ const Home = () => {
                     </p>
                     
                     <div className="d-grid ms-5 mt-4 ">
-                        <button style={
+                        <button onClick={() => {
+                            navigate('/contact')
+                        }} style={
                             {
                                 width:"443px"
                             }
