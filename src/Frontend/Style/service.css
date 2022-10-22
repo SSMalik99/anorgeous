@@ -1,4 +1,4 @@
-.service-icon {
+/* .service-icon {
     font-size: 5rem;
 }
 
@@ -7,8 +7,7 @@
     flex-wrap: wrap;
 } */
 
-.card {
-    /* width: 25%; */
+/* .card {
     margin: 2rem;
     background-color: var(--color-bg);
 }
@@ -25,4 +24,59 @@
 .card-text {
     font-size: 14px;
     color: #555;
+}  */
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service > h2 {
+    font-size: 4rem;
+    color: var(--color-cyan);
+}
+
+.service > p {
+    font-size: 1.5rem;
+}
+
+.service .item-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service .item {
+    /* width: 50%; */
+    padding: 1.5rem;
+}
+
+.item .item-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.item .item-content {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.developemnt {
+    color: var(--color-cyan);
+}
+
+.design {
+    color: var(--color-purple);
+}
+
+.bug {
+    color: var(--color-siren);
+}
+
+.data-analytics {
+    color: var(--color-cobalt);
 }
