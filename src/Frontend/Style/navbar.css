@@ -2,9 +2,9 @@
 
 .nav-link.active {
     color: var(--btn-bg-active) !important;
-   
 } 
+
 .background-nav{
     background-color: #F8F9FA;
-    font-family: Mulish;
+    /* font-family: Mulish; */
 }
