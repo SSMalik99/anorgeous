@@ -29,7 +29,7 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail}>
                     <div className="row">
                         <div className="col-lg-6 d-lg-block d-none">
-                            <h2 className="header">LET ANNORGEOUS HELP YOU GET IT <span className="done">DONE</span>.</h2>
+                            <h2 className="header">LET ANORGEOUS HELP YOU GET IT <span className="done">DONE</span>.</h2>
                             <p>For a FREE consultation, simply leave your details and we'll contact you within the next 24 hours.</p>
                         </div>
                         <div className="col-lg-6 col-12 px-lg-4 px-2">
