@@ -48,8 +48,8 @@
 }
 
 .service .item {
-    /* width: 50%; */
     padding: 1.5rem;
+    /* width: 100%; */
 }
 
 .item .item-title {
@@ -79,4 +79,16 @@
 
 .data-analytics {
     color: var(--color-cobalt);
+}
+
+@media only screen and (min-width: 768px) {
+    .item {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .item {
+        width: 100%;
+    }
 }

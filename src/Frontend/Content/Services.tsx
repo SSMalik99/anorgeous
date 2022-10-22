@@ -56,7 +56,7 @@ const Services = () => {
           customers.
         </p>
         <div className="item-container">
-          <div className="item w-md-50 w-100">
+          <div className="item ">
             <div className="item-title developemnt d-flex justify-content-center">
               <span>Development</span>
               <img
@@ -73,7 +73,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="item w-md-50 w-100">
+          <div className="item ">
             <div className="item-title design d-flex justify-content-center">
               <span>Design</span>
               <img
@@ -90,7 +90,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="item w-md-50 w-100">
+          <div className="item ">
             <div className="item-title bug d-flex justify-content-center">
               <span>Software Testing</span>
               <img
@@ -107,7 +107,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="item w-md-50 w-100">
+          <div className="item ">
             <div className="item-title data-analytics d-flex justify-content-center">
               <span>Big Data & Analytics</span>
               <img
