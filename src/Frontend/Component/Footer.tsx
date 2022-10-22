@@ -4,8 +4,8 @@ import "../Style/footer.css";
 const Footer = () => {
   return (
     <footer  
-      style={styles.size}
-      className="px-4 d-lg-flex d-xl-flex d-sm-flex d-xs-inline justify-content-between bottom-fixed align-items-center">
+     
+      className="px-4 footerFinalAlignment d-lg-flex d-xl-flex d-sm-flex d-xs-inline justify-content-between bottom-fixed align-items-center">
       <div>
         Copyright©{new Date().getFullYear()} Annorgeous
       </div>
@@ -36,11 +36,3 @@ const Footer = () => {
 
 export default Footer;
 
-const styles = {
-  size : {
-    "height" : "100px"
-  },
-  background: {
-    
-  }
-}
