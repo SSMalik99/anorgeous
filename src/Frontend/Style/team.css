@@ -36,7 +36,7 @@
 }
 
 .color-navies {
-    color: #1D92AC;
+    color: var(--color-cyan);
 }
 
 .color-goldy{
@@ -44,5 +44,5 @@
 }
 
 .color-browny {
-    color: #6C3707;
+    color: var(--color-siren);
 }
