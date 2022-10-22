@@ -1,0 +1,48 @@
+.main-heading {
+    font-family: inter;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87.14px;
+    color: #E46F55;
+}
+
+.sub-content {
+    position: absolute;
+    /* width: 1238px;
+    height: 220px;
+    left: 127px;
+    top: 384px; */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    /* align-items: center;
+    text-align: center; */
+    color: #000000;
+
+}
+
+
+.team-hobby-item.team-hobby-item-desc{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.color-navies {
+    color: #1D92AC;
+}
+
+.color-goldy{
+    color: #998200;
+}
+
+.color-browny {
+    color: #6C3707;
+}

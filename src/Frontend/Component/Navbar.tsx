@@ -6,15 +6,7 @@ import "../Style/navbar.css";
 
 const Navbar = () => {
 
-    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-        // menuOpen ? 
-        let elememt = document.getElementById('navbarNav')
-
-        if (elememt) {
-
-            elememt.classList.contains('show') ? elememt.classList.remove('show') :elememt.classList.add('show')
-        }
-    };
+    
   return (
     <div className="nav-container background-nav">
       <nav className="px-4 d-flex justify-content-between navbar navbar-expand-lg container-fluid">
@@ -26,7 +18,7 @@ const Navbar = () => {
         </div>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-        onClick={(evt) => handleClick(evt)}
+       
         >
             <span className="navbar-toggler-icon"></span>
         </button>
