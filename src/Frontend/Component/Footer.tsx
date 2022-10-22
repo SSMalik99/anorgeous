@@ -3,36 +3,44 @@ import "../Style/footer.css";
 
 const Footer = () => {
   return (
-    <footer className="p-4 d-flex justify-content-between flex-column flex-sm-row">
-      <div>Copyright©{new Date().getFullYear()} Annorgeous</div>
-      <div className="d-flex justify-content-between align-items-center">
-        <div className="">
+    <footer  
+      style={styles.size}
+      className="px-4 d-lg-flex d-xl-flex d-sm-flex d-xs-inline justify-content-between bottom-fixed align-items-center">
+      <div>
+        Copyright©{new Date().getFullYear()} Annorgeous
+      </div>
+      <div>
+        <div className="d-flex align-items-center">
             <a 
-                href="#" className="text-decoration-none text-black h">
-                    {"Term & Conditions |  "} 
+                href="#" className="text-decoration-none mr-3 text-black h">
+                    {"Term & Conditions"} 
             </a> 
-            
+            <span>|</span>
             <a 
                 href="#" 
-                className="text-decoration-none text-black"> 
-                {" Privacy Policy | "} 
+                className="text-decoration-none mx-3 text-black"> 
+                {" Privacy Policy"} 
                 
             </a>
-
+            <span>|</span>
             <a 
                 href="#" 
-                className="text-decoration-none text-black"> 
+                className="text-decoration-none mx-3 text-black"> 
                 {" Site Map "}
             </a>
         </div>
-        {/* <span>
-          <i className="uil uil-linkedin px-2 icon"></i>
-          <i className="uil uil-facebook px-2 icon"></i>
-          <i className="uil uil-instagram px-2 icon"></i>
-        </span> */}
       </div>
     </footer>
   );
 };
 
 export default Footer;
+
+const styles = {
+  size : {
+    "height" : "100px"
+  },
+  background: {
+    
+  }
+}

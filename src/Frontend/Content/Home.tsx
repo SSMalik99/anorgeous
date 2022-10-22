@@ -4,7 +4,7 @@ import landing from '../../assets/landing.jpeg';
 // import bg from '../../assets/bg-image.jpg'
 const Home = () => {
     return (
-        <div className="container-fluid mt-5 cont">
+        <div className="container-fluid cont">
             <div className="row">
                 <div className="col-lg-5">
                     <p className="text mt-6 px-5"> 

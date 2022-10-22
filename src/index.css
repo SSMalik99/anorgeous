@@ -33,8 +33,9 @@ code {
   --color-light: rbga(255, 255, 255, 0.6);
 
   --btn-bg: #FFC107;
+  --btn-bg-active:#000000;
 
-
+  
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
