@@ -3,6 +3,59 @@ import Crausel from "../Component/Crausel";
 import "../Style/team.css"
 
 
+interface Member {
+    id: any,
+    name: string,
+    image: string,
+    small_desc: string
+}
+
+const teamArray : Array<any>= [
+    {
+        id: 1,
+        name: "Lyubov",
+        "image": "",
+        "small_desc" : "Full Stack Develooper",
+    },
+    {
+        id: 2,
+        name: "Divya",
+        "image": "",
+        "small_desc" : "Full Stack Develooper",
+    },
+    {
+        id: 3,
+        name: "Rajvi",
+        "image": "",
+        "small_desc" : "Full Stack Develooper",
+    },
+    {
+        id: 4,
+        name: "Sijan",
+        "image": "",
+        "small_desc" : "Full Stack Develooper",
+    }
+] 
+
+
+const reduceTeamCard = (member: Member) => {
+    return (
+        <div className="card">
+            <img src={member.image} className="card-img-top" alt="..." />
+            <div className="card-body">
+            <h5 className="card-title">{member.name}</h5>
+            <p className="card-text">
+                {member.small_desc}
+            </p>
+            </div>
+            <div className="card-footer">
+                <small className="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    )
+}
+
+
 const Team = () => {
     return (
 
@@ -17,7 +70,7 @@ const Team = () => {
                     Meet Our Team
                 </div>
 
-                <div className="text-center">
+                <div className="text-center sub-content mt-3">
                 We are a team of expert software engineers.<br/>
                 We are all different and we come from different parts of the world. <br/>
                 Yet we all share something that unites us all - innovation, commitment, and integrity. <br/>
@@ -26,11 +79,14 @@ const Team = () => {
                 </div>
 
 
-                
+
 
                 {/* crausel code */}
-                <div>
-                    <Crausel />
+                <div style={{
+                    // minHeight:"500px",
+                    // backgroundColor:"red"
+                }}>
+                    {/* <Crausel /> */}
                 </div>
 
 
@@ -73,7 +129,7 @@ const Team = () => {
                 </div>
 
                 {/* Contact us button */}
-                <div className="text-center mt-3">
+                <div className="text-center mt-5">
                     <button className="btn btn-lg btn-warning">Contact us</button>
                 </div>
                 </div>
