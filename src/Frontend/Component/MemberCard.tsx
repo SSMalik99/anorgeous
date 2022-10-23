@@ -27,7 +27,8 @@ const MemberCard = ({member} : {member : Member}) => {
             </p>
             </div>
             <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <button className="btn btn-info fw-bold btn-lg" >More Info</button>
+                <small className="text-muted"></small>
             </div>
         </div>
     )
