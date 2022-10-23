@@ -38,7 +38,7 @@ const teamArray : Array<Member>= [
         name: "Divya",
         "image": riddhi,
         "title" : "Software Engineer",
-        "desc" : "Curious human being with good knowledge of Frontend and backend technologies.",
+        "desc" : "A passionate web/ui developer. I love to experiment using the frontend technologies, and develop cool UIs.",
         "linkdin" : "http://www.linkedin.com/in/divya-bhamerkar-709216215",
         "stackoverflow" : "https://stackoverflow.com/users/17056514/riddhi",
         github : "https://github.com/Riddhi1622"
@@ -49,9 +49,9 @@ const teamArray : Array<Member>= [
         "image": rajvi,
         "title" : "Full Stack Develooper",
         "desc" : "Professional designer with good knowledge of Frontend and backend technologies.",
-        "linkdin" : "https://www.linkedin.com/in/saravjeet-singh-b05299208/",
-        "stackoverflow" : "https://stackoverflow.com/users/13733759/saravjeet-singh",
-        github : "https://github.com/LyubovKorovina"
+        "linkdin" : "https://www.linkedin.com/in/rajvi-chavda-585051220",
+        "stackoverflow" : "https://stackoverflow.com",
+        github : "https://github.com/rajvi89"
     },
     {
         id: 4,
