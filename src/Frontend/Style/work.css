@@ -1,0 +1,16 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work > h2 {
+    font-size: 4rem;
+    color:#003B75;
+}
+
+.image-dimension {
+    width: 230;
+    height: 470;
+}
