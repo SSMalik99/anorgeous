@@ -1,16 +1,36 @@
 .work {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; */
+}
+.left-content {
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
+    align-content: center;
+    top: 500px;
+    flex-direction: column;
 }
 
-.work > h2 {
-    font-size: 4rem;
+.left-below-content {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+.app_name_content{
+    font-weight: 700;
+}
+
+.left-above-content{
+    font-size: 72px;
     color:#003B75;
+    font-weight: 700;
+    line-height: 87px;
 }
 
 .image-dimension {
-    width: 230;
-    height: 470;
+    width: 230px;
+    height: 470px;
 }
