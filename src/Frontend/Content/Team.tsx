@@ -4,51 +4,74 @@ import Crausel from "../Component/Crausel";
 import "../Style/team.css"
 import saravjeet_singh from "../../assets/team/sarav.jpeg"
 import MemberCard from "../Component/MemberCard";
+import rajvi from "../../assets/team/rajvi.jpeg";
+import riddhi from "../../assets/team/riddhi.jpeg";
+import srijan from "../../assets/team/srijan.jpeg"
 import blank_image from "../../assets/team/blank_user.webp"
-
+import lyubov from "../../assets/team/lyubov.jpeg"
 interface Member {
     id: any,
     name: string,
     image: string,
     title: string,
-    desc : string
+    desc : string,
+    linkdin : string,
+    stackoverflow : string,
+    github : string
+
 }
 
 const teamArray : Array<Member>= [
     {
         id: 1,
         name: "Lyubov",
-        "image": blank_image,
+        "image": lyubov,
         "title" : "Full Stack Develooper",
-        "desc" : "Project Manager"
+        "desc" : `Jack of all, master of none.
+        Currently a Cyber Security Analyst at Super Dispatch, with over 4 years prior experience in software QA Engineering.`,
+        "linkdin" : "https://www.linkedin.com/in/lyubov-korovina/",
+        "stackoverflow" : "https://stackoverflow.com/users/10021852/lyu-ko",
+        github : "https://github.com/LyubovKorovina"
     },
     {
         id: 2,
         name: "Divya",
-        "image": blank_image,
+        "image": riddhi,
         "title" : "Full Stack Develooper",
-        "desc" : "Developer"
+        "desc" : "Developer",
+        "linkdin" : "https://www.linkedin.com/in/saravjeet-singh-b05299208/",
+        "stackoverflow" : "https://stackoverflow.com/users/13733759/saravjeet-singh",
+        github : "https://github.com/LyubovKorovina"
     },
     {
         id: 3,
         name: "Rajvi",
-        "image": blank_image,
+        "image": rajvi,
         "title" : "Full Stack Develooper",
-        "desc" : "Lead Designer"
+        "desc" : "Lead Designer",
+        "linkdin" : "https://www.linkedin.com/in/saravjeet-singh-b05299208/",
+        "stackoverflow" : "https://stackoverflow.com/users/13733759/saravjeet-singh",
+        github : "https://github.com/LyubovKorovina"
     },
     {
         id: 4,
         name: "Srijan",
-        "image": blank_image,
+        "image": srijan,
         "title" : "Full Stack Develooper",
-        "desc" : "Developer"
+        "desc" : "Developer",
+        "linkdin" : "https://www.linkedin.com/in/saravjeet-singh-b05299208/",
+        "stackoverflow" : "https://stackoverflow.com/users/13733759/saravjeet-singh",
+        github : "https://github.com/LyubovKorovina"
     },
     {
         id: 5,
         name: "Saravjeet Singh",
         "image": saravjeet_singh,
         "title" : "Full Stack Develooper",
-        "desc" : "Senior Software engineer"
+        "desc" : "Experienced PHP Developer with a demonstrated history of working in the computer software industry. Skilled in Python (Programming Language), Go, PHP, Problem Solving, and JavaScript.",
+        "linkdin" : "https://www.linkedin.com/in/saravjeet-singh-b05299208/",
+        "stackoverflow" : "https://stackoverflow.com/users/13733759/saravjeet-singh",
+        github : "https://github.com/SSMalik99"
     }
 ] 
 
