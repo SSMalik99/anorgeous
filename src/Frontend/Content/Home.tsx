@@ -7,9 +7,9 @@ const Home = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="container-fluid cont">
-            <div className="row">
-                <div className="col-lg-5">
+        <>
+            <div className="row cont">
+                <div className="col-md-5">
                     <p className="text mt-6 px-5"> 
                         Gorgeous team thrilling results...
                     </p>
@@ -17,12 +17,12 @@ const Home = () => {
                         We strive to create products that solve true problems
                     </p>
                     
-                    <div className="d-grid ms-5 mt-4 ">
+                    <div className="d-grid ms-5  mt-4 ">
                         <button onClick={() => {
                             navigate('/contact')
                         }} style={
                             {
-                                width:"443px"
+                                width:"60%"
                             }
                         }
                             className="btn btn-streched btn-warning .small fw-bold btn-lg"><small>{`Contact us`} 
@@ -36,12 +36,13 @@ const Home = () => {
                         </div>
                     
                 </div>
-                <div className = "col-lg-6">
-                   <img src={landing} alt="image"></img>
+                
+                <div className="col-md-6">
+                   <img src={landing} className="img-fluid h-100" alt="image"></img>
                 </div>
             </div>
            
-        </div>
+        </>
     )
 }
 
