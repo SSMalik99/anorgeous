@@ -5,7 +5,7 @@ import "../Style/team.css"
 import saravjeet_singh from "../../assets/team/sarav.jpeg"
 import MemberCard from "../Component/MemberCard";
 import rajvi from "../../assets/team/rajvi.jpeg";
-import riddhi from "../../assets/team/riddhi.jpeg";
+import riddhi from "../../assets/team/rdihi.jpeg";
 import srijan from "../../assets/team/srijan.jpeg"
 import blank_image from "../../assets/team/blank_user.webp"
 import lyubov from "../../assets/team/lyubov.jpeg"
@@ -37,18 +37,18 @@ const teamArray : Array<Member>= [
         id: 2,
         name: "Divya",
         "image": riddhi,
-        "title" : "Full Stack Develooper",
-        "desc" : "Developer",
-        "linkdin" : "https://www.linkedin.com/in/saravjeet-singh-b05299208/",
-        "stackoverflow" : "https://stackoverflow.com/users/13733759/saravjeet-singh",
-        github : "https://github.com/LyubovKorovina"
+        "title" : "Software Engineer",
+        "desc" : "Curious human being with good knowledge of Frontend and backend technologies.",
+        "linkdin" : "http://www.linkedin.com/in/divya-bhamerkar-709216215",
+        "stackoverflow" : "https://stackoverflow.com/users/17056514/riddhi",
+        github : "https://github.com/Riddhi1622"
     },
     {
         id: 3,
         name: "Rajvi",
         "image": rajvi,
         "title" : "Full Stack Develooper",
-        "desc" : "Lead Designer",
+        "desc" : "Professional designer with good knowledge of Frontend and backend technologies.",
         "linkdin" : "https://www.linkedin.com/in/saravjeet-singh-b05299208/",
         "stackoverflow" : "https://stackoverflow.com/users/13733759/saravjeet-singh",
         github : "https://github.com/LyubovKorovina"
@@ -58,10 +58,10 @@ const teamArray : Array<Member>= [
         name: "Srijan",
         "image": srijan,
         "title" : "Full Stack Develooper",
-        "desc" : "Developer",
-        "linkdin" : "https://www.linkedin.com/in/saravjeet-singh-b05299208/",
-        "stackoverflow" : "https://stackoverflow.com/users/13733759/saravjeet-singh",
-        github : "https://github.com/LyubovKorovina"
+        "desc" : "Experienced FullStack Developer with a demonstrated history of building web applications. Ability to learn and implement new technologies quickly. Strong engineering professional skilled in Angular, C#, Python, Javascript, HTML, SCSS.",
+        "linkdin" : "https://www.linkedin.com/in/srijan-shrestha/",
+        "stackoverflow" : "https://stackoverflow.com",
+        github : "https://github.com/srijan-shrestha"
     },
     {
         id: 5,
