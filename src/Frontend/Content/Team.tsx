@@ -1,62 +1,79 @@
-import React from "react";
+import { url } from "inspector";
+import React, { useEffect, useState } from "react";
 import Crausel from "../Component/Crausel";
 import "../Style/team.css"
-
+import saravjeet_singh from "../../assets/team/sarav.jpeg"
+import MemberCard from "../Component/MemberCard";
+import blank_image from "../../assets/team/blank_user.webp"
 
 interface Member {
     id: any,
     name: string,
     image: string,
-    small_desc: string
+    title: string,
+    desc : string
 }
 
-const teamArray : Array<any>= [
+const teamArray : Array<Member>= [
     {
         id: 1,
         name: "Lyubov",
-        "image": "",
-        "small_desc" : "Full Stack Develooper",
+        "image": blank_image,
+        "title" : "Full Stack Develooper",
+        "desc" : "Project Manager"
     },
     {
         id: 2,
         name: "Divya",
-        "image": "",
-        "small_desc" : "Full Stack Develooper",
+        "image": blank_image,
+        "title" : "Full Stack Develooper",
+        "desc" : "Developer"
     },
     {
         id: 3,
         name: "Rajvi",
-        "image": "",
-        "small_desc" : "Full Stack Develooper",
+        "image": blank_image,
+        "title" : "Full Stack Develooper",
+        "desc" : "Lead Designer"
     },
     {
         id: 4,
-        name: "Sijan",
-        "image": "",
-        "small_desc" : "Full Stack Develooper",
+        name: "Srijan",
+        "image": blank_image,
+        "title" : "Full Stack Develooper",
+        "desc" : "Developer"
+    },
+    {
+        id: 5,
+        name: "Saravjeet Singh",
+        "image": saravjeet_singh,
+        "title" : "Full Stack Develooper",
+        "desc" : "Senior Software engineer"
     }
 ] 
 
-
-const reduceTeamCard = (member: Member) => {
-    return (
-        <div className="card">
-            <img src={member.image} className="card-img-top" alt="..." />
-            <div className="card-body">
-            <h5 className="card-title">{member.name}</h5>
-            <p className="card-text">
-                {member.small_desc}
-            </p>
-            </div>
-            <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
-            </div>
-        </div>
-    )
-}
+let currentIndex = Math.floor(Math.random() * teamArray.length)
 
 
 const Team = () => {
+    const [member, setMember] = useState(teamArray[currentIndex])
+    
+    // useEffect(() => {
+    //     setMember(teamArray[currentIndex])
+    // }, [])
+
+    const changeTeamMember = (increase: Boolean) => {
+        
+        let arrayLength = teamArray.length
+        if (increase) {
+            currentIndex = currentIndex < arrayLength - 1 ? currentIndex + 1 : 0
+        }else {
+            currentIndex = currentIndex > 0 ? currentIndex - 1 : teamArray.length - 1
+        }
+        
+        setMember(teamArray[currentIndex])
+    }
+
     return (
 
         // give image to the outer container
@@ -83,10 +100,20 @@ const Team = () => {
 
                 {/* crausel code */}
                 <div style={{
-                    // minHeight:"500px",
-                    // backgroundColor:"red"
-                }}>
-                    {/* <Crausel /> */}
+                    minHeight:"fit-content"
+                }} className="mt-4 py-2">
+                    
+                    <div className="d-flex justify-content-around align-items-center">
+                        <button className="btn" onClick={() => {changeTeamMember(false)}}>
+                            <i className="bi fs-1 bi-arrow-left-circle-fill"></i>
+                        </button>
+
+                            <MemberCard  member={member} key={`close_key_${Math.random()}`} />
+
+                        <button className="btn" onClick={() => {changeTeamMember(true)}}>
+                            <i className="bi fs-1 bi-arrow-right-circle-fill"></i>
+                        </button>
+                    </div>
                 </div>
 
 
