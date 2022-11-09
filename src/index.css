@@ -115,7 +115,7 @@ a:hover {
 }
 
 .frontImageContainer {
-  background-image: url(./assets/main_bakc.jpeg);
+  /* background-image: url(./assets/main_bakc.jpeg); */
 
   background-position: center;
   background-repeat: no-repeat;

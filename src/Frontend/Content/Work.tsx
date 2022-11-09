@@ -40,6 +40,32 @@ const Work = () => {
                     </div>
 
                 </div>
+
+                {/* <div style={{
+                    // border:"2px solid black",
+                    textAlign:"center"
+                }}>
+                   
+                    <b>IAMOPEN</b> works in three stages.
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Company Interaction.</td>
+                                <td>adfhslkuhasodifb</td>
+                            </tr>
+                            <tr>
+                                <td>Early Buyers.</td>
+                                <td>adfhslkuhasodifb</td>
+                            </tr>
+                            <tr>
+                                <td>End Users.</td>
+                                <td>adfhslkuhasodifb</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div> */}
             </div>
         </div>
     )

@@ -14,22 +14,36 @@ interface Member {
 
 
 const MemberCard = ({member} : {member : Member}) => {
-
+    
     return (
-        <div className="card text-center">
+        <div  className="card text-center rer" >
+            <div  style={{
+            background:`url(${member.image}) no-repeat`,
+            backgroundSize:"100%",
+            minHeight:"500px",
+            maxHeight:"500px",
+            overflow:"scroll"
+        }} >
             <div className="text-center card-img-top">
                 <img src={member.image} className="mt-2 member-image" alt="..." />
             </div>
-            <div className="card-body">
-            <h5 className="card-title">{member.name}</h5>
-            <div className="card-text">
-                {member.title}
+
+            <div className="card-body" style={{
+                background:"#F8F9FA",
+                minHeight:"200px"
+            }}>
+                <h5 className="card-title">{member.name}</h5>
+                <div className="card-text">
+                    {member.title}
+                </div>
+                <p className="card-text mt-2">
+                    {member.desc}
+                </p>
             </div>
-            <p className="card-text mt-2">
-                {member.desc}
-            </p>
             </div>
-            <div className="card-footer ">
+            <div className="card-footer " style={{
+                background:"#F8F9FA"
+            }}>
                 <div className="d-flex justify-content-center align-items-center">
                     {/* <button className="btn btn-info fw-bold btn-lg" >More Info</button> */}
                     <small className="mx-2">Follow {member.name} : </small>
