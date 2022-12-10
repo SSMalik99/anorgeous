@@ -25,12 +25,12 @@ const Footer = () => {
                 {" Privacy Policy"} 
                 
             </a>
-            <span>|</span>
+            {/* <span>|</span>
             <NavLink
                 to={"/site-map"} 
                 className="text-decoration-none mx-3 text-black"> 
                 {" Site Map "}
-            </NavLink>
+            </NavLink> */}
         </div>
       </div>
     </footer>
