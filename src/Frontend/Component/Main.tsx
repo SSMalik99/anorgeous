@@ -8,6 +8,7 @@ import Work from "../Content/Work";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "../Style/main.css"
+import SiteMap from "../Content/SiteMap";
 
 
 
@@ -29,6 +30,7 @@ const Main = () => {
             <Route path='/work' element={<Work />} />
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path="/site-map" element={<SiteMap />} />
         </Routes>
         </div>
 

@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../Style/footer.css";
 
 const Footer = () => {
-  
+  const privacyPolicyLink = "https://www.termsfeed.com/live/2db4508e-3cec-449a-886e-a76857d93b4f"
   return (
     <footer  
      
@@ -18,17 +19,18 @@ const Footer = () => {
             </a> 
             <span>|</span> */}
             <a 
-                href="#" 
+                href={`${privacyPolicyLink}`} 
+                target="blank"
                 className="text-decoration-none mx-3 text-black"> 
                 {" Privacy Policy"} 
                 
             </a>
             <span>|</span>
-            <a 
-                href="#" 
+            <NavLink
+                to={"/site-map"} 
                 className="text-decoration-none mx-3 text-black"> 
                 {" Site Map "}
-            </a>
+            </NavLink>
         </div>
       </div>
     </footer>
