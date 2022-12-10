@@ -7,7 +7,9 @@ const Home = () => {
     const navigate = useNavigate();
 
     return (
-        <>
+        <div className="frontImageContainer" style={{
+            backgroundColor: "#F8F9FA"
+        }}>
             <div className="row cont">
                 <div className="col-md-5">
                     <p className="text mt-6 px-5"> 
@@ -41,8 +43,12 @@ const Home = () => {
                    <img src={landing} className="img-fluid h-100" alt="image"></img>
                 </div>
             </div>
+
+            {/* <div className="">
+                THis is ourt main page trialing
+            </div> */}
            
-        </>
+        </div>
     )
 }
 

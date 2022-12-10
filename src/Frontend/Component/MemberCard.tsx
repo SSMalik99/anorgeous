@@ -1,5 +1,7 @@
-import { Component, useEffect } from "react"
-import React from "react"
+// import { Component, useEffect } from "react"
+import React, { useEffect, useState } from "react"
+import extractColors from 'extract-colors'
+import { useAsyncValue } from "react-router-dom"
 
 interface Member {
     id: any,
@@ -12,19 +14,44 @@ interface Member {
     github:string
 }
 
+const getColorsGradient = async (image: string) => {
+    let colors = await extractColors(image)
+    
+    let newColors =  colors.map(color => {
+        return color.hex
+    }).join(", ")
+
+    return `linear-gradient(45deg, ${newColors} )`;
+} 
+
+
 
 const MemberCard = ({member} : {member : Member}) => {
-    
+    let [gradient, updateGradient] = useState("")
+
+    useEffect( () => {
+        (async () => {
+            let grad = await getColorsGradient(member.image)
+            console.log(grad)
+            updateGradient(grad)
+        })()
+    },[])
+
+  console.log(extractColors(member.image))
+
+
     return (
-        <div  className="card text-center rer" >
+        <div  className={`card text-center rer`}  >
             <div  style={{
-            background:`url(${member.image}) no-repeat`,
+            // background:`url(${member.image}) no-repeat`,
             backgroundSize:"100%",
             minHeight:"500px",
             maxHeight:"500px",
             overflow:"scroll"
         }} >
-            <div className="text-center card-img-top">
+            <div className="text-center card-img-top" style={{
+                backgroundImage: gradient
+            }}>
                 <img src={member.image} className="mt-2 member-image" alt="..." />
             </div>
 

@@ -2,7 +2,7 @@ import { url } from "inspector";
 import React, { useEffect, useState } from "react";
 import Crausel from "../Component/Crausel";
 import "../Style/team.css"
-import saravjeet_singh from "../../assets/team/sarav.jpeg"
+import saravjeet_singh from "../../assets/team/sarav.jpg"
 import MemberCard from "../Component/MemberCard";
 import rajvi from "../../assets/team/rajvi.jpeg";
 import riddhi from "../../assets/team/rdihi.jpeg";

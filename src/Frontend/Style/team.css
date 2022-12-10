@@ -42,7 +42,7 @@
 }
 
 .member-image {
-    width: 300px;
+    width: fit-content;
     height: 300px;
     border-radius: 20%;
 }
